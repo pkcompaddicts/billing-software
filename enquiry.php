@@ -71,30 +71,30 @@ function checkAll(bx) {
                 </div>
 		  
                
-           
+           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<?php
 						if(isset($_SESSION['msg']))
 						{ ?>
-						<div class="alert alert-block alert-success">
-								<a class="close" data-dismiss="alert" href="#">Close</a>
-  								<h4 class="alert-heading">Congo!</h4>
-  								<?php echo $_SESSION['msg'];?>
-							</div><?php
+						<div class="alert alert-block alert-success text-solve">
+							<a class="close" data-dismiss="alert" href="#">X</a>
+								<?php echo $_SESSION['msg'];?>
+						</div>
+							<?php
 							
 							} ?>
 							
 			<?php
 						if(isset($_SESSION['err']))
 						{ ?>
-						<div class="alert alert-block alert-error">
-								<a class="close" data-dismiss="alert" href="#">Close</a>
-  								<h4 class="alert-heading">Sorry!</h4>
-  								<?php echo $_SESSION['err'];?>
-							</div><?php
+						  <div class="alert alert-block alert-error text-error">
+					<a class="close" data-dismiss="alert" href="#">X</a>
+					<?php echo $_SESSION['err'];?>
+				 </div>
+						<?php
 							
 							} ?>
 							
-								
+			</div>				
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">

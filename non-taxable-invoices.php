@@ -37,10 +37,9 @@ function checkAll(bx) {
 						if($msg!="")
 						{
 						?>
-						<div class="alert alert-block alert-success">
-								<a class="close" data-dismiss="alert" href="#">Close</a>
-  								<h4 class="alert-heading">Congo!</h4>
-  								<?php echo $msg;?>
+						    <div class="alert alert-block alert-success text-solve">
+								<a class="close" data-dismiss="alert" href="#">X</a>
+									<?php echo $_SESSION['msg'];?>
 							</div>
 							<?php
 							}

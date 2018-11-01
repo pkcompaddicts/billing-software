@@ -102,12 +102,12 @@ function checkAll(bx) {
 	
 	
 	<div class="row-fluid">
-	<?php
+	       <div class="col-md-12">
+	            <?php
 						if(isset($_SESSION['msg']))
 						{ ?>
-						<div class="alert alert-block alert-success">
-								<a class="close" data-dismiss="alert" href="#">Close</a>
-  								<h4 class="alert-heading">Congo!</h4>
+						<div class="alert alert-block alert-success text-solve">
+								<a class="close" data-dismiss="alert" href="#">X</a>
   								<?php echo $_SESSION['msg'];?>
 							</div><?php
 							//unset($_SESSION['msg']);
@@ -116,13 +116,14 @@ function checkAll(bx) {
 				<?php
 						if(isset($_SESSION['err']))
 						{ ?>
-						<div class="alert alert-block alert-danger">
-								<a class="close" data-dismiss="alert" href="#">Close</a>
-  								<h4 class="alert-heading">Sorry!</h4>
+						     <div class="alert alert-block alert-danger text-error">
+								<a class="close" data-dismiss="alert" href="#">X</a
   								<?php echo $_SESSION['err'];?>
 							</div><?php
 							//unset($_SESSION['err']);
 							} ?>
+							
+							</div>
 							
 				
 			<div class="row-fluid">
@@ -139,7 +140,7 @@ function checkAll(bx) {
 			$branchData_Row=$branchData->first();
 			
 		?>
-			<div class="span6">
+			<div class="span6 card">
 					<div class="box">
 						<div class="box-head tabs">
 							<h3>Update Profile</h3>
@@ -232,9 +233,9 @@ function checkAll(bx) {
 					$branchData_Row=$branchData->first();
 					
 			?>
-			<div class="span12">
-				<div class="box">
-					<div class="box-head">
+			<div class="span6 card">
+				<div class="box ">
+					<div class="box-head tabs">
 						<h3>Your Profile</h3>
 					</div>
 					<div class="box-content">

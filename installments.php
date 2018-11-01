@@ -38,9 +38,9 @@ function checkAll(bx) {
                         <?php
 						if(isset($_SESSION['msg']))
 						{ ?>
-						<div class="alert alert-block alert-success">
-								<a class="close" data-dismiss="alert" href="#">Close</a>
-  								<h4 class="alert-heading">Congo!</h4>
+						<div class="alert alert-block alert-success text-solve">
+								<a class="close" data-dismiss="alert" href="#">X</a>
+  								
   								<?php echo $_SESSION['msg'];?>
 							</div><?php
 							
@@ -49,9 +49,9 @@ function checkAll(bx) {
 			<?php
 						if(isset($_SESSION['err']))
 						{ ?>
-						<div class="alert alert-block alert-error">
-								<a class="close" data-dismiss="alert" href="#">Close</a>
-  								<h4 class="alert-heading">Sorry!</h4>
+						<div class="alert alert-block alert-error text-error">
+								<a class="close" data-dismiss="alert" href="#">X</a>
+  								
   								<?php echo $_SESSION['err'];?>
 							</div><?php
 							

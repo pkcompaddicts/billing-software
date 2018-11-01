@@ -281,26 +281,31 @@ margin-bottom:10px;
 </style>
 
  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
- <?php
+                      <div class="row">
+					       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                       <?php
 						if($msg!="")
 						{?>
-						<div class="alert alert-info alert-block">
-								<a class="close" data-dismiss="alert" href="#">Close</a>
+						    <div class="alert alert-info alert-block text-solve">
+								<a class="close" data-dismiss="alert" href="#">X</a>
   								
   								<?php echo $msg;?>
-							</div><?php
+							</div>
+							
+							<?php
 							}
 							if($msg1!="")
 							{
 							?>
-							<div class="alert alert-block alert-danger">
-							  <a class="close" data-dismiss="alert" href="#">Close</a>
-							  <h4 class="alert-heading">Sorry!</h4>
+							<div class="alert alert-block alert-danger text-error">
+							  <a class="close" data-dismiss="alert" href="#">X</a>
 							  <?php echo $msg1;?>
 							</div>
 							<?php
 							}?>
+							
+							</div>
+					  </div>
                     <div class="card">
                         
                         <div class="body">
